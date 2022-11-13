@@ -1,0 +1,9 @@
+@use '../mixins/responsive.scss' as *;
+
+.main {
+    padding: 0 22px;
+
+    @include responsive(desktop) {
+        padding: 0 100px;
+    }
+}

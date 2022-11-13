@@ -1,0 +1,41 @@
+@use '../mixins/responsive.scss' as *;
+
+.article {
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px lightgray;
+    margin-bottom: 2.5rem;
+
+    @include responsive(desktop) {
+        display: flex;
+        padding-left: 120px;
+        justify-content: space-between;
+    }
+
+    &--reverse {
+        @include responsive(desktop) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__pic {
+        @include responsive(desktop) {
+            max-width: 450px;
+        }
+    }
+
+    &__info {
+        @include responsive(desktop) {
+            width: 500px;
+        }
+    }
+
+    &__title {
+        font-size: 1.2rem;
+        text-align: center;
+
+        @include responsive(desktop) {
+            text-align: left;
+        }
+    }
+}

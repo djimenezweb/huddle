@@ -1,0 +1,8 @@
+@use '../mixins/responsive.scss' as *;
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}

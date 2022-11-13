@@ -1,0 +1,26 @@
+@use '../mixins/responsive.scss' as *;
+
+.button {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.header__top__button {
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 2px 2px 8px gray;
+    font-size: 0.7rem;
+}
+
+.header__button {
+    color: white;
+    background-color: var(--pink);
+    width: 300px;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}

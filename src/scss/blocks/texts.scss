@@ -1,0 +1,12 @@
+@use '../mixins/responsive.scss' as *;
+
+.text {
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+    line-height: 1.3;
+
+    @include responsive(desktop) {
+        text-align: left;
+    }
+}

@@ -1,0 +1,36 @@
+@use '../mixins/responsive.scss' as *;
+
+.header {
+    padding: 1rem;
+    background-color: var(--pale-cyan);
+    background-image: url(../assets/images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.header__title {
+    font-family: 'Poppins', sans-serif;
+    padding: 4rem 2rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.header__text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.header__image {}

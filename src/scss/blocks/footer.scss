@@ -1,0 +1,6 @@
+@use '../mixins/responsive.scss' as *;
+
+.footer {
+    background-color: var(--dark-cyan);
+    color: white;
+}
