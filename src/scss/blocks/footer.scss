@@ -3,4 +3,12 @@
 .footer {
     background-color: var(--dark-cyan);
     color: white;
+    padding: 140px 20px 20px 20px;
+    height: 850px;
+    padding-top: 140px;
+
+    @include responsive(desktop) {
+        height: 560px;
+        padding: 140px 120px 20px 120px;
+    }
 }
