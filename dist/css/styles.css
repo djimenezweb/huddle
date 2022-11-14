@@ -419,25 +419,47 @@ h3 {
   display: block;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  padding: 0.5rem;
   border-radius: 2rem;
   text-align: center;
 }
-
-.header__top__button {
+.button__top {
   background-color: white;
-  min-width: 100px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  font-size: 0.7rem;
+  width: 100px;
+  height: 25px;
 }
-
-.header__button {
-  color: white;
+@media screen and (min-width: 1440px) {
+  .button__top {
+    width: 200px;
+    height: 50px;
+  }
+}
+.button__header {
   background-color: var(--pink);
-  width: 300px;
-  margin-bottom: 4rem;
-  margin-left: auto;
-  margin-right: auto;
+  color: white;
+  width: 240px;
+  height: 40px;
+}
+@media screen and (min-width: 1440px) {
+  .button__header {
+    width: 280px;
+    height: 50px;
+  }
+}
+.button__footer {
+  background-color: var(--pink);
+  color: white;
+  width: 200px;
+  height: 40px;
+}
+@media screen and (min-width: 1440px) {
+  .button__footer {
+    border-radius: 3rem;
+    width: 400px;
+    height: 80px;
+  }
+}
+.button--shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .header {
@@ -542,6 +564,9 @@ h3 {
 @media screen and (min-width: 1440px) {
   .article-small {
     bottom: -60px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
