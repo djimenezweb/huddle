@@ -27,6 +27,9 @@
     &__info {
         @include responsive(desktop) {
             width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 

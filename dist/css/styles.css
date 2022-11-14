@@ -371,6 +371,7 @@ a {
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: 1px dashed rgba(255, 0, 0, 0.4);
 }
 
 body {
@@ -447,29 +448,37 @@ h3 {
   background-position: top center;
   background-size: cover;
 }
-
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {
-  width: 100px;
+@media screen and (min-width: 1440px) {
+  .header__text-with-image {
+    display: flex;
+    gap: 4rem;
+  }
 }
-
 .header__title {
   font-family: "Poppins", sans-serif;
   padding: 4rem 2rem 0;
   text-align: center;
   font-size: 1.5rem;
 }
-
 .header__text {
   text-align: center;
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 1440px) {
+  .header__image {
+    max-width: 800px;
+  }
+}
+
+.logo {
+  width: 100px;
 }
 
 .main {
@@ -507,6 +516,9 @@ h3 {
 @media screen and (min-width: 1440px) {
   .article__info {
     width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 .article__title {
@@ -544,5 +556,30 @@ h3 {
   .footer {
     height: 560px;
     padding: 140px 120px 20px 120px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 1rem;
+}
+.footer__text {
+  max-width: 400px;
+  margin: 0;
+}
+
+.copyright {
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .copyright {
+    text-align: right;
   }
 }
