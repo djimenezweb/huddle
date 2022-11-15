@@ -412,15 +412,18 @@ h3 {
 @media screen and (min-width: 1440px) {
   .text {
     text-align: left;
+    font-size: 1.125rem;
+    line-height: 27px;
   }
 }
 
 .button {
-  display: block;
+  display: flex;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   border-radius: 2rem;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .button__top {
   background-color: white;
@@ -429,37 +432,54 @@ h3 {
 }
 @media screen and (min-width: 1440px) {
   .button__top {
+    font-size: 0.9rem;
     width: 200px;
     height: 50px;
   }
 }
-.button__header {
+.button__header, .button__footer {
   background-color: var(--pink);
   color: white;
+}
+.button__header {
   width: 240px;
   height: 40px;
 }
 @media screen and (min-width: 1440px) {
   .button__header {
+    font-size: 0.9rem;
     width: 280px;
     height: 50px;
   }
 }
 .button__footer {
-  background-color: var(--pink);
-  color: white;
   width: 200px;
   height: 40px;
 }
 @media screen and (min-width: 1440px) {
   .button__footer {
+    font-size: 1.25rem;
     border-radius: 3rem;
     width: 400px;
     height: 80px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .button--shadow {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 100px;
+}
+@media screen and (min-width: 1440px) {
+  .logo {
+    width: 200px;
+  }
+}
+.logo--margin {
+  margin-bottom: 2rem;
 }
 
 .header {
@@ -470,10 +490,21 @@ h3 {
   background-position: top center;
   background-size: cover;
 }
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 50px 96px;
+    margin-bottom: 10rem;
+  }
+}
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (min-width: 1440px) {
+  .header__top {
+    margin-bottom: 100px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .header__text-with-image {
@@ -487,6 +518,15 @@ h3 {
   text-align: center;
   font-size: 1.5rem;
 }
+@media screen and (min-width: 1440px) {
+  .header__title {
+    padding: 6rem 0 0;
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: left;
+    line-height: 1.5;
+  }
+}
 .header__text {
   text-align: center;
   font-size: 18px;
@@ -494,13 +534,15 @@ h3 {
   margin-bottom: 2rem;
 }
 @media screen and (min-width: 1440px) {
-  .header__image {
-    max-width: 800px;
+  .header__text {
+    font-size: 1rem;
+    text-align: left;
   }
 }
-
-.logo {
-  width: 100px;
+@media screen and (min-width: 1440px) {
+  .header__image {
+    max-width: 700px;
+  }
 }
 
 .main {
@@ -521,7 +563,7 @@ h3 {
 @media screen and (min-width: 1440px) {
   .article {
     display: flex;
-    padding-left: 120px;
+    padding: 54px 32px 54px 120px;
     justify-content: space-between;
   }
 }
@@ -532,7 +574,7 @@ h3 {
 }
 @media screen and (min-width: 1440px) {
   .article__pic {
-    max-width: 450px;
+    width: 400px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -549,6 +591,7 @@ h3 {
 }
 @media screen and (min-width: 1440px) {
   .article__title {
+    font-size: 1.75rem;
     text-align: left;
   }
 }
@@ -569,6 +612,11 @@ h3 {
     margin-right: auto;
   }
 }
+@media screen and (min-width: 1440px) {
+  .article-small--title {
+    font-size: 2rem;
+  }
+}
 
 .footer {
   background-color: var(--dark-cyan);
@@ -579,6 +627,7 @@ h3 {
 }
 @media screen and (min-width: 1440px) {
   .footer {
+    font-size: 0.875rem;
     height: 560px;
     padding: 140px 120px 20px 120px;
   }
@@ -600,11 +649,22 @@ h3 {
   margin: 0;
 }
 
+.social__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  aspect-ratio: 1;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
 .copyright {
   text-align: center;
 }
 @media screen and (min-width: 1440px) {
   .copyright {
     text-align: right;
+    font-size: 0.75rem;
   }
 }

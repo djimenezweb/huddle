@@ -8,7 +8,7 @@
 
     @include responsive(desktop) {
         display: flex;
-        padding-left: 120px;
+        padding: 54px 32px 54px 120px;
         justify-content: space-between;
     }
 
@@ -20,7 +20,7 @@
 
     &__pic {
         @include responsive(desktop) {
-            max-width: 450px;
+            width: 400px;
         }
     }
 
@@ -38,6 +38,7 @@
         text-align: center;
 
         @include responsive(desktop) {
+            font-size: 1.75rem;
             text-align: left;
         }
     }
@@ -56,5 +57,12 @@
         width: 800px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    &--title {
+        @include responsive(desktop) {
+            font-size: 2rem;
+        }
+
     }
 }
