@@ -32,16 +32,6 @@
             justify-content: center;
         }
     }
-
-    &__title {
-        font-size: 1.2rem;
-        text-align: center;
-
-        @include responsive(desktop) {
-            font-size: 1.75rem;
-            text-align: left;
-        }
-    }
 }
 
 .article-small {
@@ -53,16 +43,11 @@
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 
     @include responsive(desktop) {
-        bottom: -60px;
+        bottom: -92px;
         width: 800px;
+        height: 280px;
+        padding-top: 75px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    &--title {
-        @include responsive(desktop) {
-            font-size: 2rem;
-        }
-
     }
 }
