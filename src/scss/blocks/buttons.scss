@@ -10,13 +10,20 @@
 
     &__top {
         background-color: white;
-        width: 100px;
-        height: 25px;
+        font-size: .63rem;
+        width: 96px;
+        height: 24px;
 
         @include responsive(desktop) {
             font-size: 0.9rem;
             width: 200px;
             height: 50px;
+        }
+    }
+
+    &__top:hover {
+        @include responsive(desktop) {
+            color: var(--grayishblue);
         }
     }
 
@@ -26,7 +33,17 @@
         color: white;
     }
 
+    &__header:hover,
+    &__footer:hover {
+        @include responsive(desktop) {
+            background-color: #ff9adb;
+        }
+    }
+
     &__header {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: .75rem;
         width: 240px;
         height: 40px;
 
@@ -34,12 +51,14 @@
             font-size: 0.9rem;
             width: 280px;
             height: 50px;
+            margin-left: 0;
         }
     }
 
     &__footer {
         width: 200px;
         height: 40px;
+        font-size: 10px;
 
         @include responsive(desktop) {
             font-size: 1.25rem;

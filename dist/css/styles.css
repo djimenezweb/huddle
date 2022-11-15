@@ -430,10 +430,12 @@ h3 {
   }
 }
 
+.article__small--title {
+  font-size: 1.125rem;
+}
 @media screen and (min-width: 1440px) {
   .article__small--title {
     font-size: 2rem;
-    text-align: center;
     margin-top: 0;
     margin-bottom: 2.5rem;
   }
@@ -455,7 +457,7 @@ h3 {
 
 .header__text {
   text-align: center;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 2rem;
 }
@@ -476,8 +478,9 @@ h3 {
 }
 .button__top {
   background-color: white;
-  width: 100px;
-  height: 25px;
+  font-size: 0.63rem;
+  width: 96px;
+  height: 24px;
 }
 @media screen and (min-width: 1440px) {
   .button__top {
@@ -486,11 +489,24 @@ h3 {
     height: 50px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .button__top:hover {
+    color: var(--grayishblue);
+  }
+}
 .button__header, .button__footer {
   background-color: var(--pink);
   color: white;
 }
+@media screen and (min-width: 1440px) {
+  .button__header:hover, .button__footer:hover {
+    background-color: #ff9adb;
+  }
+}
 .button__header {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.75rem;
   width: 240px;
   height: 40px;
 }
@@ -499,11 +515,13 @@ h3 {
     font-size: 0.9rem;
     width: 280px;
     height: 50px;
+    margin-left: 0;
   }
 }
 .button__footer {
   width: 200px;
   height: 40px;
+  font-size: 10px;
 }
 @media screen and (min-width: 1440px) {
   .button__footer {
@@ -520,7 +538,7 @@ h3 {
 }
 
 .logo {
-  width: 100px;
+  width: 104px;
 }
 @media screen and (min-width: 1440px) {
   .logo {
@@ -537,7 +555,7 @@ h3 {
   background-image: url(../assets/images/bg-hero-mobile.svg);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: contain;
 }
 @media screen and (min-width: 1440px) {
   .header {
@@ -555,6 +573,22 @@ h3 {
 @media screen and (min-width: 1440px) {
   .header__top {
     margin-bottom: 70px;
+  }
+}
+.header__info {
+  margin-bottom: 56px;
+}
+@media screen and (min-width: 1440px) {
+  .header__info {
+    margin-bottom: 0;
+  }
+}
+.header__text {
+  padding: 0 20px;
+}
+@media screen and (min-width: 1440px) {
+  .header__text {
+    padding: 0;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -613,10 +647,14 @@ h3 {
 .article-small {
   position: relative;
   bottom: -68px;
-  padding: 24px;
+  padding: 24px 0;
   border-radius: 8px;
   background-color: white;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 1440px) {
   .article-small {
@@ -635,10 +673,10 @@ h3 {
   padding: 140px 20px 20px 20px;
   height: 850px;
   padding-top: 140px;
+  font-size: 14px;
 }
 @media screen and (min-width: 1440px) {
   .footer {
-    font-size: 0.875rem;
     height: 560px;
     padding: 190px 120px 20px 120px;
   }
@@ -661,25 +699,40 @@ h3 {
   max-width: 400px;
   margin: 0;
 }
+.footer__item {
+  margin-bottom: 1rem;
+}
 @media screen and (min-width: 1440px) {
   .footer__item {
     margin-bottom: 1rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .footer__link:hover {
+    text-decoration: underline;
+  }
+}
 
 .copyright {
   text-align: center;
+  font-size: 11px;
 }
 @media screen and (min-width: 1440px) {
   .copyright {
     text-align: right;
-    font-size: 0.75rem;
+    font-size: 12px;
   }
 }
 
 .social {
   display: flex;
+  justify-content: center;
   gap: 12px;
+}
+@media screen and (min-width: 1440px) {
+  .social {
+    justify-content: flex-start;
+  }
 }
 .social__link {
   display: inline-flex;
@@ -689,4 +742,10 @@ h3 {
   aspect-ratio: 1;
   border: 1px solid white;
   border-radius: 50%;
+}
+@media screen and (min-width: 1440px) {
+  .social__link:hover {
+    color: var(--pink);
+    border-color: var(--pink);
+  }
 }

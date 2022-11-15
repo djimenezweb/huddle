@@ -6,9 +6,9 @@
     padding: 140px 20px 20px 20px;
     height: 850px;
     padding-top: 140px;
+    font-size: 14px;
 
     @include responsive(desktop) {
-        font-size: 0.875rem;
         height: 560px;
         padding: 190px 120px 20px 120px;
     }
@@ -35,17 +35,26 @@
     }
 
     &__item {
+        margin-bottom: 1rem;
+
         @include responsive(desktop) {
             margin-bottom: 1rem;
+        }
+    }
+
+    &__link:hover {
+        @include responsive(desktop) {
+            text-decoration: underline;
         }
     }
 }
 
 .copyright {
     text-align: center;
+    font-size: 11px;
 
     @include responsive(desktop) {
         text-align: right;
-        font-size: 0.75rem;
+        font-size: 12px;
     }
 }

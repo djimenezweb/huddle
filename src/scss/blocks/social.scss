@@ -2,7 +2,12 @@
 
 .social {
     display: flex;
+    justify-content: center;
     gap: 12px;
+
+    @include responsive(desktop) {
+        justify-content: flex-start;
+    }
 
     &__link {
         display: inline-flex;
@@ -12,5 +17,12 @@
         aspect-ratio: 1;
         border: 1px solid white;
         border-radius: 50%;
+    }
+
+    &__link:hover {
+        @include responsive(desktop) {
+            color: var(--pink);
+            border-color: var(--pink);
+        }
     }
 }

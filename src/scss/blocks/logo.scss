@@ -1,7 +1,7 @@
 @use '../mixins/responsive.scss' as *;
 
 .logo {
-    width: 100px;
+    width: 104px;
 
     @include responsive(desktop) {
         width: 200px;
