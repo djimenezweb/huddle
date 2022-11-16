@@ -3,9 +3,11 @@
 .social {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: .75rem;
+    margin-bottom: 26px;
 
     @include responsive(desktop) {
+        margin-bottom: 0;
         justify-content: flex-start;
     }
 
@@ -13,7 +15,7 @@
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        width: 32px;
+        width: 2rem;
         aspect-ratio: 1;
         border: 1px solid white;
         border-radius: 50%;

@@ -1,6 +1,6 @@
 $breakpoints: (
   tablet: 640px,
-  laptop: 1024px,
+  laptop: 101.5rem,
   desktop: 1440px
 );
 
@@ -9,7 +9,9 @@ $breakpoints: (
     @media screen and (min-width: map-get($breakpoints, $key)) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @media screen and (min-width: $key) {
       @content;
     }

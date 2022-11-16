@@ -1,7 +1,7 @@
 @use '../mixins/responsive.scss' as *;
 
 .header {
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
     background-color: var(--pale-cyan);
     background-image: url(../assets/images/bg-hero-mobile.svg);
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 
     @include responsive(desktop) {
         background-image: url(../assets/images/bg-hero-desktop.svg);
-        padding: 48px 80px;
+        padding: 3rem 5rem;
         margin-bottom: 10rem;
         background-size: contain;
     }
@@ -49,6 +49,9 @@
     }
 
     &__image {
+        max-width: 300px;
+        margin-inline: auto;
+
         @include responsive(desktop) {
             max-width: 700px;
         }

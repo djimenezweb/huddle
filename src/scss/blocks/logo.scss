@@ -8,6 +8,15 @@
     }
 
     &--margin {
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
+
+    &-white {
+        width: 166px;
+
+        @include responsive(desktop) {
+            width: 240px;
+        }
+    }
+
 }

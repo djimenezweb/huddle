@@ -11,8 +11,8 @@
     &__top {
         background-color: white;
         font-size: .63rem;
-        width: 96px;
-        height: 24px;
+        width: 6rem;
+        height: 1.5rem;
 
         @include responsive(desktop) {
             font-size: 0.9rem;
@@ -64,13 +64,13 @@
             font-size: 1.25rem;
             border-radius: 3rem;
             width: 400px;
-            height: 80px;
+            height: 5rem;
             margin-left: auto;
             margin-right: auto;
         }
     }
 
     &--shadow {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px .75rem rgba(0, 0, 0, 0.2);
     }
 }
